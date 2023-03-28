@@ -141,7 +141,6 @@
       {
         var number = sessionStorage.getItem("phone");
         number = "+91"+number;
-        console.log(number);
     	  firebase.auth().signInWithPhoneNumber(number, window.recaptchaVerifier).then(function(confirmationResult){
     	  	window.confirmationResult = confirmationResult;
     	  	coderesult = confirmationResult;
